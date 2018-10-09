@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var emailOne = 'phamdat@gmail.com';
+    var emailTwo = 'pham@gmail.';
+    var emailThree = '@gmail.com';
+    var emailFour = 'a@gmailcom';
+    var emailFive = 'a@gmail.com';
+    function checkEmail(mail) {
+        check = /^[a-zA-Z0-9]+[a-zA-Z0-9]*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)$/;
+        if(check.test(mail)){
+            return true;
+        } return false;
+    }
+    console.log(checkEmail(emailOne));
+    console.log(checkEmail(emailTwo));
+    console.log(checkEmail(emailThree));
+    console.log(checkEmail(emailFour));
+    console.log(checkEmail(emailFive));
+</script>
+</body>
+</html>
